@@ -6,6 +6,6 @@ CS50 Final Project
 
 [Description](https://cs50.harvard.edu/extension/2023/spring/project/)
 
-![Site snapshot](http://url/to/img.png)
+![Alt text](http://url/to/img.png)
 
 
