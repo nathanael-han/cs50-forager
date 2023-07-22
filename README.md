@@ -6,3 +6,5 @@ CS50 Final Project
 
 [Description](https://cs50.harvard.edu/extension/2023/spring/project/)
 
+[!alt](https://github.com/nathanael-han/cs50-forager/blob/main/forager-snap.png)
+
