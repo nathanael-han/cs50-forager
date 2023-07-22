@@ -1,0 +1,318 @@
+body, div, h1, h2, h3, h4, h5, h6, p,    /*Source for reset code : Richard Clark - http://richclarkdesign.com*/
+img, ol, ul, li, footer, header,
+menu, nav, section, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+}
+
+/* reference:  https://www.youtube.com/watch?v=kbLfWKGVsMQ*/
+
+nav ul {
+    list-style:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #61856a;
+}
+
+body{
+    background-color: #b3b4b5;
+    line-height:1;
+}
+
+header{
+    width:100%;
+    height: 120px;
+    background-color:#dedede;
+}
+
+header .header-b{
+    color: #61856a;
+    font-family: 'Texturina', serif;
+    font-size: 35px;
+    font-weight:900;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    padding: 20px 0;
+    padding-bottom: 0px;
+}
+
+header .header-b:hover{
+    transform: scale(1.05);
+}
+
+header nav ul{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 14px;
+    line-height:40px;
+}
+
+header nav ul li a{
+    font-family: 'Texturina', serif;
+    color: #61856a;
+    font-size: 20px;
+}
+
+header nav ul li:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (min-width: 700px){
+    header .header-b{
+        margin: 31px 0;
+        text-align: left;
+        padding: 0px 32px 0px 40px;
+        border-right: 4px;
+        float: left;
+        line-height: 38px;
+    }
+
+    header nav ul{
+        float: left;
+        margin: 20px 0px 0px 20px;
+    }
+
+    header nav ul li a{
+        line-height: 70px;
+    }
+
+}
+
+
+.pic{
+    background-image: url('images/new.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    width:100%;
+    min-height: 300px;
+    height: calc(100vh - 220px);
+    background-color:#849684;
+    background-size: cover;
+    display:table;
+    background-attachment: fixed;
+}
+
+.front {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.pic h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #e4e5eb;
+    font-weight: bolder;
+    line-height: 110px;
+}
+
+.pic h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: #e4e5eb;
+    line-height: 50px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    padding: 30px 30px;
+    margin-top: 0px;
+    background-color: #3b3b3b;
+    overflow:hidden;
+}
+
+footer ul{
+     width: fit-content;
+     float:left;
+     padding-left: 20px;
+     font-family: 'Texturina', serif;
+}
+
+footer ul li{
+    list-style: none;
+    display: block;
+
+}
+
+footer ul li:hover{
+    transform: scale(1.05);
+}
+
+footer ul li a{
+    font-family: 'Texturina', serif;
+    font-size: 18px;
+    color: #d6d6d6;
+    line-height: 35px;
+}
+
+.btn-color:focus,.btn-color:active {
+   outline: none !important;
+}
+
+.btn-color{
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:0px;
+  margin-right:5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-color:hover{
+    transform: scale(1.03);
+}
+
+.caro{
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:75px;
+    padding-right:75px;
+    background-color: #b3b4b5;
+
+}
+
+.carousel-inner{
+    opacity: 0.94;
+
+}
+
+
+@media only screen and (min-width: 900px){
+    .caro{
+    padding-left:300px;
+    padding-right:300px;
+    }
+}
+
+#plant_cards {
+    padding: 30px 0px;
+}
+
+#plant_cards h1 {
+    font-weight:800;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.containers {
+    margin-left:50px;
+    margin-right:50px;
+}
+
+.sub{
+    text-align:center;
+    margin-top: 40px;
+    margin-bottom:20px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color:#414e69;
+}
+
+.card{
+    background-color:#768579;
+}
+
+.card:hover{
+    transform: scale(0.993);
+    opacity: 0.95;
+}
+
+.card-title{
+    text-decoration:none;
+    color: #dadce0;
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 16vw;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 800px){
+    .card-img-top {
+    height: 30vw;
+    }
+}
+
+image{
+    float:left;
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:20px;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+}
+
+.jumbotron{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#3c473d;
+    color: #d6d6d6;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.jumbotron h1{
+    font-size:40px;
+}
+
+.para{
+    line-height: 1.8;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right:20px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  opacity:0.9;
+}
+
+@media only screen and (min-width: 700px){
+    .center{
+        width: 40%;
+    }
+}
+
+
+
+
+
+

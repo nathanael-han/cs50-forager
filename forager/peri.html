@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Periwinkle</title>
+        <meta name ="viewport" content="width=device-width,initial-scale = 1.0, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwqp7N9n7EtaY3AjFz78N9e5dFDiyikQc&callback=initMap&libraries=&v=weekly"
+        defer
+        ></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="header-b">FORAGER</a>
+            <nav>
+                <ul>
+                    <li><a href="plants.html">PLANTS</a></li>
+                    <li><a href="mush.html">MUSHROOMS</a></li>
+                    <li><a href="ocean.html">OCEAN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="map"></div>
+            <!--https://developers.google.com/maps/documentation/javascript/overview-->
+            <script>
+                 let map;
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById("map"), {
+                        center:  {lat:42.4668, lng: -70.9495},
+                        zoom: 6,
+                      });
+                      new google.maps.Marker({
+                      position: { lat:  41.53011, lng: -71.22902},
+                      map,
+                      title: "Location",
+                      });
+                      new google.maps.Marker({
+                      position: { lat: 41.940389, lng: -69.9844},
+                      map,
+                      title: "Location",
+                      });
+                    }
+            </script>
+
+            <div class="jumbotron">
+                <h1 class="display-4">Common Periwinkle</h1>
+                <br>
+                <p class="lead">Littorina littorea</p>
+
+                <hr class="my-4">
+
+                <p class="para">
+                The Common Periwinkle is a species native to the northeast.
+                Periwinkles can be found attached to rocks on the coast of New England and
+                a permit is not required to harvest them.
+                <br>
+                <br>
+                This wild edible
+                is popular in Portuguese and Asian cuisines. An easy way to enjoy periwinkles
+                is to cook them in butter, and to snack on them using a small knife.
+                </p>
+
+            </div>
+
+            <img src="images/peri.jpeg" alt="Common periwinkles" class="center">
+
+        </main>
+        <footer>
+            <ul>
+                <li><button class="btn-color">Change Background Color</button></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="plants.html">PLANTS</a></li>
+                <li><a href="mush.html">MUSHROOMS</a></li>
+                <li><a href="ocean.html">OCEAN</a></li>
+            </ul>
+            <script src="toggle.js"></script>
+        </footer>
+    </body>
+</html>
